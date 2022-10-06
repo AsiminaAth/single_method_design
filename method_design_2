@@ -1,0 +1,29 @@
+1. Describe the Problem
+
+As a user
+So that I can improve my grammar
+I want to verify that a text starts 
+with a capital letter and ends with 
+a suitable sentence-ending punctuation mark.
+
+
+2. Design the Method Signature
+
+# def grammar_improve(text)
+    report = grammar_improve(text)
+    text: a string
+    report: true (verified as correct) or false (verified as wrong): return value
+
+
+3. Create Examples as Tests
+
+grammar_improve("Hi there!") => [true]
+grammar_improve("hi there!") => [false]
+grammar_improve("Hi there") => [false]
+grammar_improve("hi there") => [false]
+grammar_improve("") => throw exception: "No text found"
+
+
+4. Implement the Behaviour
+
+After each test you write, follow the test-driving process of red, green, refactor to implement the behaviour.
